@@ -1,0 +1,123 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: #FDCEDF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h1 {
+        background-color:#fff2f5fe;
+        width: fit-content;
+        font-size: xxx-large;
+        margin-top: -50px;
+        background: linear-gradient(to right, #f793b8 0%, #fd76a8 33%, #f7bc97 34%,#f7bc97 60%, #fd78a9 62% ,#fd78a9 100%);
+        // color: #fff2f5fe;,
+        font-family: sans-serif;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+    }
+
+}
+
+.userDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+    background-clip: text;
+
+    h2 {
+        width: fit-content;
+        background-color: #FDCEDF;
+        // color: #fff2f5fe;
+        font-size: xx-large;
+        padding: 5px;
+        margin-bottom: 20px;
+       
+    }
+
+    .usersButton {
+        background-color: #F2BED1;
+        color: #f9f0f2f5;
+        border: 0.5px solid #F2BED1;
+        border-radius: 0.4rem;
+        width: fit-content;
+        padding: 10px;
+        animation: rotate 0.5s linear infinite;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #fff2f5fe;
+            color:#f1b5cb;
+            cursor: pointer;
+            transition: 0.5s;
+            animation: none;
+
+        }
+    }
+
+}
+
+@keyframes moveInY {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+};
+@media screen and (max-width:660px) {
+        .home{
+            h1{
+                font-size:xx-large;
+            }
+            .userDiv{
+                h2{
+                    font-size: x-large;
+                }
+            }
+        }
+
+}
+@media screen and (max-width:440px) {
+        .home{
+            h1{
+                font-size:x-large;
+            }
+            .userDiv{
+                h2{
+                    font-size: large;
+                }
+                .usersButton{
+                    padding:5px;
+                }
+            }
+        }
+
+}
+@media screen and (max-width:328px) {
+        .home{
+            h1{
+                font-size:large;
+            }
+            .userDiv{
+                h2{
+                    font-size: x-large;
+                }
+                .usersButton{
+                    padding:5px;
+                }
+            }
+        }
+
+}
