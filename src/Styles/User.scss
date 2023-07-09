@@ -1,11 +1,12 @@
 .container {
     width: 100%;
-    height: 90vh;
-    margin-top: 10px;
+    height: 100vh;
+    // margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // overflow-y: scroll;
 
     .buttonContainer{
         display: flex;
@@ -75,11 +76,15 @@
             grid-template-columns: repeat(2, 1fr);
 
             .userDiv {
+                margin-top:1%;
                 img {
                     height: 25vh;
                 }
+                h1{
+                    font-size: 80%;
+                }
                 h3{
-                    font-size: small;
+                    font-size: 80%;
                 }
             }
 
@@ -95,13 +100,16 @@
             grid-template-columns: repeat(1, 1fr);
           
             .userDiv {
-                width: 98%;
+                width: 100%;
 
                 img {
                     height: 10vh;
                 }
+                h1{
+                    font-size: 70%;
+                }
                 h3{
-                    font-size: small;
+                    font-size: 60%;
                 }
             }
 

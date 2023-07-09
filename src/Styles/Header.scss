@@ -9,13 +9,13 @@
 
     .image-container {
         width: fit-content;
-        height: 10vh;
+        height: 9vh;
         background-color: #F2BED1;
 
         img {
             width: fit-content;
-            height: 10vh;
-            margin-left: 2px;
+            height: 9vh;
+            // margin-left: 2px;
             filter: hue-rotate(300deg);
             background-color: #fac5d80a;
         }
@@ -24,6 +24,9 @@
     .navBar_2 {
         background-color: #F2BED1;
         width:fit-content;
+        height: 9vh;
+        display: flex;
+        align-items: center;
 
         >a {
             text-decoration: none;
@@ -31,6 +34,7 @@
             // padding-right: 10px;
             margin:8px;
             padding:6px;
+            padding-bottom: 3px;
             color: white;
             background-color: #F2BED1;
             border-radius: 0.3rem;
@@ -44,13 +48,37 @@
 
 };
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:387px) {
     .navBar{
-
         .image-container{
             width: fit-content;
             img{
                 width: 140px;
+            }
+        }
+        .navBar_2{
+            a{
+                font-size:small;
+            }
+        }
+    }
+
+}
+@media screen and (max-width:278px) {
+    .navBar{
+
+        .image-container{
+            img{
+                width:50%;
+                height: 7vh;
+            }
+        }
+        .navBar_2{
+            a{
+                padding:2px;
+                margin:2px;
+                font-size:x-small;
+               
             }
         }
     }
