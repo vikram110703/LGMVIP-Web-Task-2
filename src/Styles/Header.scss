@@ -1,21 +1,26 @@
 .navBar {
-    position:sticky;
+    position: sticky;
+    top: 0%;
     background-color: #F2BED1;
     width: 100%;
-    height: 10vh;
+    height: min(6rem, 20vw);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
+    padding-inline: auto;
+    overflow-y: hidden;
+    font-size: 1.8rem;
 
     .image-container {
-        width: fit-content;
-        height: 9vh;
+        width: 50%;
+        height: 100%;
         background-color: #F2BED1;
+        overflow-y: hidden;
 
         img {
             width: fit-content;
-            height: 9vh;
-            // margin-left: 2px;
+            height: 100%;
             filter: hue-rotate(300deg);
             background-color: #fac5d80a;
         }
@@ -23,64 +28,76 @@
 
     .navBar_2 {
         background-color: #F2BED1;
-        width:fit-content;
-        height: 9vh;
+        width: 50%;
+        height: 100%;
+        overflow-y: hidden;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
+        padding-inline: 1rem;
 
         >a {
             text-decoration: none;
-            // padding: 5px;
-            // padding-right: 10px;
-            margin:8px;
-            padding:6px;
-            padding-bottom: 3px;
+            margin: 0;
+            margin-inline: 1rem;
+            padding: 0.8rem;
             color: white;
             background-color: #F2BED1;
-            border-radius: 0.3rem;
+            border-radius: 0.4rem;
 
             &:hover {
-                border: 0.3px solid rgba(232, 229, 229, 0.679);
+                border: 0.03rem solid rgba(232, 229, 229, 0.679);
             }
         }
     }
 
 
-};
+}
 
-@media screen and (max-width:387px) {
-    .navBar{
-        .image-container{
-            width: fit-content;
-            img{
-                width: 140px;
-            }
-        }
-        .navBar_2{
-            a{
-                font-size:small;
+
+@media (width<=387px) {
+    // html {
+    //     font-size: 50%;
+    // }
+
+    .navBar {
+        .image-container {
+            img {
+                max-width: 90%;
             }
         }
     }
 
 }
-@media screen and (max-width:278px) {
-    .navBar{
 
-        .image-container{
-            img{
-                width:50%;
-                height: 7vh;
+@media (width<=278px) {
+    html {
+        font-size: 40%;
+    }
+
+    .navBar {
+        .image-container {
+            width: 35%;
+
+            img {
+                width: 60%;
             }
         }
-        .navBar_2{
-            a{
-                padding:2px;
-                margin:2px;
-                font-size:x-small;
-               
+
+        .navBar_2 {
+            width: 65%;
+
+            a {
+                margin-inline: 0.5rem;
+                padding: 0.3rem;
             }
         }
     }
 
+}
+@media(width<=150px)
+{
+    html{
+        font-size: 30%;
+    }
 }

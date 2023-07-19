@@ -7,7 +7,7 @@ import letsGrowMore_logo from '../Assets/logo 2.png';
 
 const Header = () => {
   return (
-    <div className='navBar'>
+    <nav className='navBar'>
       <div className='image-container'>
         <img src={letsGrowMore_logo} alt="" />
       </div>
@@ -16,7 +16,7 @@ const Header = () => {
         <a href="/about">About</a>
       </div>
 
-    </div>
+    </nav>
   )
 }
 

@@ -13,8 +13,8 @@ function App() {
 
   return (
     <>
-    <Header />
     <Router>
+    <Header />
       <Routes>
 
       <Route path="/" element={<Home/>} />
